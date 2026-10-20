@@ -87,9 +87,6 @@ export const SkillsArchitecture: React.FC = () => {
                         </div>
                       )}
                     </div>
-                    <span className="text-[10px] font-mono-num font-semibold text-[#315C4B] bg-[#DCE5DC] px-1.5 py-0.5 rounded-xs shrink-0">
-                      {skill.level}
-                    </span>
                   </div>
                 ))}
               </div>

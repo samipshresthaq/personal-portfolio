@@ -11,6 +11,7 @@ export const PERSONAL_INFO = {
   linkedinUrl: 'https://linkedin.com/in/er-samip-shrestha',
   githubUrl: 'https://github.com/samipshresthaq',
   resumePdfUrl: '/assets/pdf/Samip_Shrestha_Senior_Full_Stack_Resume_5c5777cd.pdf',
+  imageUrl: '/assets/images/1773243063738.jfif',
   summary:
     'Senior Full-Stack Engineer and Tech Lead with 10+ years architecting scalable SaaS, multimodal AI evaluation systems, and high-throughput backends across React, TypeScript, NestJS, FastAPI, and PostgreSQL.',
   availability: 'Available for select engineering leadership & contract roles',
@@ -323,7 +324,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     title: 'Frontend Engineering',
-    description: 'Component architecture, reactive state, 60fps UI.',
+    description: 'Component architecture, reactive state, UI/UX.',
     skills: [
       { name: 'React', level: 'Expert', context: 'Custom hooks, virtualization, Next.js patterns' },
       { name: 'Angular', level: 'Expert', context: 'Enterprise microservices, RxJS, modular architecture' },
