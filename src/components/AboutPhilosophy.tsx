@@ -80,8 +80,16 @@ export const AboutPhilosophy: React.FC = () => {
           {/* Right: Compact Profile Snapshot */}
           <div className="lg:col-span-5 bg-white rounded-lg border border-[#E4E2DC] p-5 sm:p-6 space-y-4 shadow-xs">
             <div className="flex items-center gap-3 pb-3 border-b border-[#E4E2DC]">
-              <div className="w-10 h-10 rounded-xs bg-[#315C4B] text-[#F7F6F2] font-bold text-sm flex items-center justify-center">
+              <div className="w-11 h-11 rounded-xs bg-[#315C4B] text-[#F7F6F2] font-bold text-sm flex items-center justify-center relative overflow-hidden shrink-0">
                 {PERSONAL_INFO.initials}
+                <img
+                  src={PERSONAL_INFO.imageUrl}
+                  alt={PERSONAL_INFO.name}
+                  className="w-full h-full object-cover absolute inset-0 rounded-xs"
+                  onError={(e) => {
+                    (e.currentTarget as HTMLImageElement).style.display = 'none';
+                  }}
+                />
               </div>
               <div>
                 <h4 className="text-sm font-bold text-[#202321]">

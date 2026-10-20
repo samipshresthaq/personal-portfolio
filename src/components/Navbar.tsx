@@ -41,13 +41,15 @@ export const Navbar: React.FC<NavbarProps> = ({
           onClick={handleBrandClick}
           className="flex items-center gap-3 group text-[#202321] whitespace-nowrap shrink-0"
         >
-          <span className="w-8 h-8 rounded-sm bg-[#315C4B] text-[#F7F6F2] font-semibold text-xs flex items-center justify-center tracking-wider transition-transform duration-200 group-hover:scale-105">
+          <span className="w-8 h-8 rounded-sm bg-[#315C4B] text-[#F7F6F2] font-semibold text-xs flex items-center justify-center tracking-wider transition-transform duration-200 group-hover:scale-105 relative overflow-hidden shrink-0">
             {PERSONAL_INFO.initials}
-
             <img
               src={PERSONAL_INFO.imageUrl}
-              alt="Profile Image"
-              className="w-8 h-8 rounded-sm absolute"
+              alt={PERSONAL_INFO.name}
+              className="w-full h-full object-cover absolute inset-0 rounded-sm"
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).style.display = 'none';
+              }}
             />
           </span>
           <div className="flex flex-col">

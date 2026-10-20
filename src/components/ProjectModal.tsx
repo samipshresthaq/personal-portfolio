@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { X, CheckCircle, ArrowRight, Layers, Cpu, Award, Zap } from 'lucide-react';
 import { Project } from '../types/portfolio';
 
@@ -24,9 +25,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
 
   if (!project) return null;
 
-  return (
+  return createPortal(
     <div
-      className="fixed inset-0 z-50 overflow-y-auto bg-[#202321]/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6"
+      className="fixed inset-0 z-[100] overflow-y-auto bg-[#202321]/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -188,6 +189,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
