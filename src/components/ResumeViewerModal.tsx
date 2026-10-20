@@ -199,18 +199,6 @@ export const ResumeViewerModal: React.FC<ResumeViewerModalProps> = ({
               <span className="hidden sm:inline">Download PDF</span>
             </a>
 
-            {/* Open in New Window */}
-            <a
-              href={PERSONAL_INFO.resumePdfUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1.5 text-[#6B716F] hover:text-[#202321] hover:bg-[#E4E2DC]/60 rounded-md transition-colors cursor-pointer"
-              title="Open raw PDF in new browser tab"
-              aria-label="Open PDF in new tab"
-            >
-              <ExternalLink className="w-4 h-4" />
-            </a>
-
             {/* Close Modal */}
             <button
               onClick={onClose}
