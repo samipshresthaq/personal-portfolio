@@ -167,7 +167,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenContact }) => {
                 className="inline-flex items-center gap-1.5 px-3.5 py-2.5 text-xs sm:text-sm font-medium text-[#315C4B] hover:underline underline-offset-4 transition-colors cursor-pointer"
               >
                 <FileText className="w-4 h-4" />
-                <span>Resume PDF</span>
+                <span>View Resume</span>
               </button>
             </div>
           </div>
@@ -182,9 +182,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenContact }) => {
                     Core Expertise Topology
                   </span>
                 </div>
-                <span className="text-[10px] font-mono-num text-[#315C4B] bg-[#DCE5DC] px-2 py-0.5 rounded-xs font-semibold">
-                  Live Stack
-                </span>
               </div>
 
               {/* Stage Selector Tabs */}

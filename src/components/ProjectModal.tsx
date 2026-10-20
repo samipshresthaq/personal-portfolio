@@ -34,7 +34,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
       aria-labelledby="modal-project-title"
     >
       <div
-        className="relative w-full max-w-4xl bg-white rounded-lg border border-[#E4E2DC] shadow-2xl p-6 sm:p-8 md:p-10 my-8 text-[#202321] transition-all"
+        className="relative w-full max-w-4xl bg-white rounded-lg border border-[#E4E2DC] shadow-2xl p-6 sm:p-8 md:p-10 my-8 text-[#202321] transition-all h-[92vh] overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -174,19 +174,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Modal Footer */}
-        <div className="pt-6 border-t border-[#E4E2DC] flex items-center justify-between">
-          <div className="text-xs text-[#6B716F]">
-            From verified project history in resume
-          </div>
-          <button
-            onClick={onClose}
-            className="px-4 py-2 text-xs font-medium text-[#202321] hover:text-[#315C4B] border border-[#E4E2DC] rounded-md hover:bg-[#F7F6F2] transition-colors cursor-pointer"
-          >
-            Close Case Study
-          </button>
         </div>
       </div>
     </div>,

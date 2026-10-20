@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { CloudDownload, ArrowUpRight } from "lucide-react";
+import { FileText, ArrowUpRight } from "lucide-react";
 import { PERSONAL_INFO } from "../data/portfolioData";
 
 interface NavbarProps {
@@ -68,7 +68,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={onOpenResume}
             className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-[#315C4B] bg-[#DCE5DC]/50 hover:bg-[#DCE5DC] border border-[#315C4B]/20 rounded-md transition-colors duration-200 whitespace-nowrap cursor-pointer"
           >
-            <CloudDownload className="w-3.5 h-3.5" />
+            <FileText className="w-3.5 h-3.5" />
             <span>Resume</span>
           </button>
 

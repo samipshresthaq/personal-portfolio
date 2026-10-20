@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Github, Linkedin, CloudDownload } from 'lucide-react';
+import { ArrowUp, Github, Linkedin, FileText } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 interface FooterProps {
@@ -40,13 +40,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenResume }) => {
               Architecture & Skills
             </a>
             <a href="#about" className="hover:text-white transition-colors">
-              Philosophy
+              About
             </a>
             <button
               onClick={onOpenResume}
               className="hover:text-white transition-colors inline-flex items-center gap-1 cursor-pointer"
             >
-              <CloudDownload className="w-3.5 h-3.5" />
+              <FileText className="w-3.5 h-3.5" />
               <span>Resume</span>
             </button>
             <button
