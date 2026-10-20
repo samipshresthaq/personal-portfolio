@@ -15,6 +15,7 @@
     "@vitejs/plugin-react": "^6.1.1",
     "gsap": "^3.15.0",
     "lucide-react": "^0.546.0",
+    "pdfjs-dist": "^6.4.299",
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
     "vite": "^8.3.0"
