@@ -34,7 +34,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
       aria-labelledby="modal-project-title"
     >
       <div
-        className="relative w-full max-w-4xl bg-white rounded-lg border border-[#E4E2DC] shadow-2xl p-6 sm:p-8 md:p-10 my-8 text-[#202321] transition-all h-[92vh] overflow-hidden"
+        className="relative w-full max-w-4xl bg-white rounded-lg border border-[#E4E2DC] shadow-2xl p-6 sm:p-8 md:p-10 my-8 text-[#202321] transition-all h-[92vh] overflow-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
