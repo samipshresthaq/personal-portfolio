@@ -10,8 +10,8 @@ export const PERSONAL_INFO = {
   phone: '+977-9845539425',
   linkedinUrl: 'https://linkedin.com/in/er-samip-shrestha',
   githubUrl: 'https://github.com/samipshresthaq',
-  resumePdfUrl: '/assets/pdf/Samip_Shrestha_Senior_Full_Stack_Resume_5c5777cd.pdf',
-  imageUrl: '/assets/images/1773243063738.jfif',
+  resumePdfUrl: './assets/pdf/Samip_Shrestha_Senior_Full_Stack_Resume_5c5777cd.pdf',
+  imageUrl: './assets/images/1773243063738.jfif',
   summary:
     'Senior Full-Stack Engineer and Tech Lead with 10+ years architecting scalable SaaS, multimodal AI evaluation systems, and high-throughput backends across React, TypeScript, NestJS, FastAPI, and PostgreSQL.',
   availability: 'Available for select engineering leadership & contract roles',
